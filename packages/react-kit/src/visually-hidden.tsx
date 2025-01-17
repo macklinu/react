@@ -1,8 +1,7 @@
 import { cx } from '@macklinu/cx'
-import type { HTMLAttributes, ReactNode } from 'react'
 
-export type VisuallyHiddenProps = HTMLAttributes<HTMLSpanElement> & {
-  children: ReactNode
+export type VisuallyHiddenProps = React.HTMLAttributes<HTMLSpanElement> & {
+  children: React.ReactNode
 }
 
 export const VisuallyHidden = ({

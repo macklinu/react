@@ -1,9 +1,8 @@
 import type { StorybookConfig } from '@storybook/react-vite'
 
-const config: StorybookConfig = {
+export default {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.tsx'],
   addons: [
-    '@storybook/addon-onboarding',
     '@storybook/addon-essentials',
     '@chromatic-com/storybook',
     '@storybook/addon-interactions',
@@ -11,6 +10,9 @@ const config: StorybookConfig = {
   framework: {
     name: '@storybook/react-vite',
     options: {},
+  },
+  docs: {
+    autodocs: 'tag',
   },
   viteFinal: async (config) => {
     const { default: tailwindcss } = await import('@tailwindcss/vite')
@@ -20,5 +22,4 @@ const config: StorybookConfig = {
 
     return config
   },
-}
-export default config
+} satisfies StorybookConfig

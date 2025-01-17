@@ -2,13 +2,17 @@
   "name": "@macklinu/react",
   "version": "0.0.0-not-published",
   "private": true,
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "packageManager": "pnpm@10.0.0",
   "devDependencies": {
+    "@macklinu/eslint-config": "^0.2.0",
     "@macklinu/prettier-config": "^0.0.0",
-    "prettier": "^3.4.2"
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9"
   }
 }

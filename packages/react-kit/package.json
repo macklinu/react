@@ -4,7 +4,8 @@
   "license": "MIT",
   "type": "module",
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/index.js",
+    "./styles": "./dist/styles.js"
   },
   "files": [
     "dist"
@@ -19,13 +20,14 @@
     "react": ">=18.0.0"
   },
   "dependencies": {
-    "@macklinu/cx": "^2.0.0"
+    "@headlessui/react": "^2.2.0",
+    "@macklinu/cx": "^2.0.0",
+    "react-aria-components": "^1.5.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.3",
     "@storybook/addon-essentials": "^8.4.7",
     "@storybook/addon-interactions": "^8.4.7",
-    "@storybook/addon-onboarding": "^8.4.7",
     "@storybook/blocks": "^8.4.7",
     "@storybook/react": "^8.4.7",
     "@storybook/react-vite": "^8.4.7",

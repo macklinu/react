@@ -1,1 +1,8 @@
+export { Badge, type BadgeProps } from './badge'
+export { Code, type CodeProps } from './code'
+export * from './fieldset'
+export { Select, type SelectProps } from './select'
+export { Text, type TextProps } from './text'
+export * from './touch-target'
 export * from './visually-hidden'
+export { RouterProvider } from 'react-aria-components'
